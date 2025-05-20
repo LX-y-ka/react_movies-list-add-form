@@ -37,13 +37,7 @@ export const NewMovie: React.FC<Props> = ({ onAdd }) => {
   };
 
   return (
-    <form
-      action="/api/movies.json"
-      method="POST"
-      className="NewMovie"
-      key={count}
-      onSubmit={handleSubmit}
-    >
+    <form className="NewMovie" key={count} onSubmit={handleSubmit}>
       <h2 className="title">Add a movie</h2>
 
       <TextField

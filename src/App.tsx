@@ -1,4 +1,4 @@
-import './App.scss';
+import './App.css';
 import React, { useState } from 'react';
 import { MoviesList } from './components/MoviesList';
 import { NewMovie } from './components/NewMovie';
@@ -19,7 +19,9 @@ export const App: React.FC = () => {
       <div className="page-content">
         <MoviesList movies={movies} />
       </div>
-      <div className="sidebar"> {<NewMovie onAdd={addMovie} />}</div>
+      <div className="sidebar">
+        <NewMovie onAdd={addMovie} />
+      </div>
     </div>
   );
 };
